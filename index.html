@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title id="page-title">Cabinet Dentaire | Alger</title>
+    <meta id="meta-description" name="description" content="Prenez rendez-vous en ligne instantanément chez votre chirurgien-dentiste. Soins de haute qualité, implants, facettes et blanchiment.">
+    <link id="canonical-link" rel="canonical" href="">
+
+    <meta id="og-title" property="og:title" content="Cabinet Dentaire | Votre Sourire Mérite Le Meilleur">
+    <meta id="og-description" property="og:description" content="Prenez rendez-vous en ligne instantanément chez votre chirurgien-dentiste.">
+    <meta id="og-image" property="og:image" content="images/hero.jpg">
+    <meta id="og-url" property="og:url" content="">
+    <meta property="og:type" content="website">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta id="twitter-title" name="twitter:title" content="Cabinet Dentaire | Votre Sourire Mérite Le Meilleur">
+    <meta id="twitter-description" name="twitter:description" content="Prenez rendez-vous en ligne instantanément chez votre chirurgien-dentiste.">
+    <meta id="twitter-image" name="twitter:image" content="images/hero.jpg">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Poppins:wght@600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="icon" type="image/png" href="images/logo.png">
+    <link rel="apple-touch-icon" href="images/logo.png">
+
+    <script type="application/ld+json" id="schema-json"></script>
+
+    <!-- Config loaded early so we can set theme colors + meta tags before first paint -->
+    <script src="config.js"></script>
+    <script>
+      // Apply brand colors immediately to avoid a flash of default theme colors
+      if (window.clinicConfig && clinicConfig.colors) {
+        var root = document.documentElement.style;
+        root.setProperty('--primary-color', clinicConfig.colors.primary);
+        root.setProperty('--secondary-color', clinicConfig.colors.secondary);
+        root.setProperty('--bg-color', clinicConfig.colors.background);
+        root.setProperty('--text-color', clinicConfig.colors.text);
+      }
+    </script>
+</head>
+<body>
+
+    <header class="navbar">
+        <div class="nav-container">
+            <a href="#" class="logo-container">
+                <img src="images/dentartiste-logo-sidi-abdellah.jpg" alt="Logo" class="logo-img" id="logo-img" width="40" height="40">
+                <span class="dynamic-clinic-name"></span>
+            </a>
+            <button class="menu-toggle" aria-label="Toggle Menu" aria-expanded="false">
+                <span></span><span></span><span></span>
+            </button>
+            <nav class="nav-links">
+                
+                <a href="#hero">Accueil</a>
+                <a href="#about">À Propos</a>
+                <a href="#services">Services</a>
+                <a href="#before-after">Avant / Après</a>
+                <a href="#gallery">Cabinet</a>
+                <a href="#reviews">Avis</a>
+                <a href="#contact">Contact</a>
+                <button class="btn btn-primary open-booking">Prendre RDV</button>
+            </nav>
+        </div>
+    </header>
+
+    <section id="hero" class="hero">
+        <div class="hero-container">
+            <div class="hero-text fade-up">
+                <h1>Votre sourire mérite le meilleur soin.</h1>
+                <p>Bienvenue chez <span class="dynamic-clinic-name"></span>, dirigé par le <span class="dynamic-doctor-name"></span>. Une dentisterie moderne pour toute la famille.</p>
+                <div class="hero-actions">
+                    <button class="btn btn-primary open-booking">Prendre Rendez-vous</button>
+                    <a href="#" class="btn btn-secondary whatsapp-btn" target="_blank">WhatsApp</a>
+                </div>
+            </div>
+            <div class="hero-image fade-up">
+                <img src="images/hero.jpg" alt="Dentist Team" loading="eager" width="600" height="500">
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="about section-padding">
+        <div class="about-container">
+            <div class="about-img fade-up">
+                <img src="images/doctor.jpg" alt="Dentiste" loading="lazy" width="500" height="600">
+            </div>
+            <div class="about-info fade-up">
+                <h3 class="dynamic-doctor-name"></h3>
+                <h4 class="dynamic-speciality"></h4>
+                <p class="about-description">Offrant des soins dentaires de pointe avec une approche humaine, douce et personnalisée. Diplômé et hautement qualifié pour traiter l'ensemble de vos besoins bucco-dentaires, de la prévention à la reconstruction esthétique complexe.</p>
+                
+                <div class="stats-grid">
+                    <div class="stat-card"><h3 class="counter" data-target="experience">0</h3><p>Ans d'Expérience</p></div>
+                    <div class="stat-card"><h3 class="counter" data-target="patients">0</h3><p>Patients Heureux</p></div>
+                    <div class="stat-card"><h3 class="counter" data-target="certificates">0</h3><p>Certifications</p></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="services" class="services section-padding gray-bg">
+        <div class="section-header">
+            <h2>Nos Services Exceptionnels</h2>
+            <p>Une large gamme de traitements modernes pour préserver et sublimer votre santé dentaire.</p>
+        </div>
+        <div class="services-grid" id="services-target">
+            </div>
+    </section>
+
+    <section id="before-after" class="before-after section-padding">
+    <div class="section-header">
+        <h2>Résultats Avant / Après</h2>
+        <p>Découvrez la transformation de nos patients après nos interventions en chirurgie et esthétique dentaire.</p>
+    </div>
+    
+    <div class="before-after-grid" id="before-after-target">
+        <!-- Rendered dynamically via script.js -->
+    </div>
+    </section>
+
+    <section id="gallery" class="gallery section-padding">
+        <div class="section-header">
+            <h2>Notre Clinique</h2>
+            <p>Découvrez notre environnement moderne, stérile et conçu pour votre confort maximal.</p>
+        </div>
+        <div class="gallery-grid">
+            <div class="gallery-item"><img src="images/clinic1.jpg" alt="Cabinet dentaire salle de soin" loading="lazy" width="600" height="400"></div>
+            <div class="gallery-item"><img src="images/clinic2.jpg" alt="Réception du cabinet" loading="lazy" width="600" height="400"></div>
+        </div>
+    </section>
+
+    <section id="reviews" class="reviews section-padding gray-bg">
+        <div class="section-header">
+            <h2>Avis de nos Patients</h2>
+            <p>Ce que nos patients disent de leur expérience au cabinet.</p>
+        </div>
+        <div class="reviews-container" id="reviews-target">
+            </div>
+    </section>
+
+    <section id="contact" class="contact section-padding">
+        <div class="contact-container">
+            <div class="contact-info fade-up">
+                <h2>Contact & Horaires</h2>
+                <p class="address-text">📍 </p>
+                <p>📞 <a href="" class="dynamic-phone-link"></a></p>
+                <p>✉️ <a href="" class="dynamic-email-link"></a></p>
+                
+                <div class="hours-box">
+                    <h3>Horaires d'Ouverture</h3>
+                    <ul id="hours-target"></ul>
+                </div>
+            </div>
+            <div class="contact-map fade-up">
+                <iframe id="maps-target" src="" width="100%" height="350" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+        </div>
+    </section>
+
+    <section class="cta-section section-padding">
+        <h2>Prêt à retrouver votre plus beau sourire ?</h2>
+        <p>Réservez votre créneau en 1 minute. Sans appel, sans attente.</p>
+        <div class="hero-actions" style="justify-content: center; margin-top: 2rem;">
+            <button class="btn btn-primary open-booking">Choisir un Rendez-vous</button>
+            <a href="#" class="btn btn-secondary whatsapp-btn" target="_blank">WhatsApp</a>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-container">
+            <p>&copy; 2026 <span class="dynamic-clinic-name"></span>. Tous droits réservés.</p>
+            <div class="socials">
+                <a href="#" class="fb-link" target="_blank">Facebook</a>
+                <a href="#" class="ig-link" target="_blank">Instagram</a>
+            </div>
+        </div>
+    </footer>
+
+    <a href="#" class="floating-whatsapp whatsapp-btn" target="_blank" aria-label="Contact Status on WhatsApp">
+        <svg viewBox="0 0 32 32" class="whatsapp-ico"><path d="M16 0c-8.837 0-16 7.163-16 16 0 2.825.733 5.48 2.01 7.79l-2.01 7.336 7.514-1.972c2.247 1.18 4.805 1.846 7.516 1.846 8.837 0 16-7.163 16-16s-7.163-16-16-16zm8.932 22.812c-.37 1.042-1.812 1.892-2.5 1.954-.62.056-1.393.08-2.277-.202-5.46-1.745-9.062-7.29-9.335-7.653-.267-.362-2.176-2.894-2.176-5.518s1.36-3.916 1.845-4.42c.483-.505 1.054-.63 1.407-.63.352 0 .704.003 1.01.017.32.014.75-.125 1.173.896.435 1.052 1.485 3.633 1.61 3.886.124.254.208.55.038.892-.17.34-.255.55-.51.85-.254.302-.534.675-.762.907-.253.256-.518.534-.222 1.043.295.508 1.312 2.164 2.816 3.504 1.933 1.724 3.562 2.26 4.067 2.472.506.21 1.004.156 1.373-.242.46-.497 1.972-2.285 2.5-3.064.526-.78 1.053-.65 1.77-.384.717.266 4.554 2.147 4.98 2.36.425.212.708.318.814.5.105.183.105 1.055-.265 2.097z" fill="#fff"/></svg>
+    </a>
+
+    <div class="booking-modal" id="bookingModal">
+        <div class="modal-content">
+            <button class="close-modal">&times;</button>
+            <div id="iframe-container" style="width:100%; height:100%;"></div>
+        </div>
+    </div>
+
+    <div class="consent-banner" id="consentBanner">
+        <p>Nous utilisons des cookies pour analyser le trafic et améliorer votre expérience. <a href="#" class="consent-learn-more">En savoir plus</a></p>
+        <div class="consent-actions">
+            <button class="btn btn-secondary" id="consentDecline">Refuser</button>
+            <button class="btn btn-primary" id="consentAccept">Accepter</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
