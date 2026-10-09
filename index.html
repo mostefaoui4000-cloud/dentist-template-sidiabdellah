@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
+    <title id="page-title">Centre Médical & Dentaire Dar El Chifaa | Alger</title>
+    <meta id="meta-description" name="description" content="Centre pluridisciplinaire Dar El Chifaa: Soins médicaux généraux, médecine assermentée et chirurgie dentaire à Sidi Abdellah, Alger.">
+    <link id="canonical-link" rel="canonical" href="https://www.darelchifaa.dz/">
+
+    <!-- Open Graph / Facebook -->
+    <meta id="og-title" property="og:title" content="Centre Médical & Dentaire Dar El Chifaa">
+    <meta id="og-description" property="og:description" content="Prenez rendez-vous en ligne instantanément.">
+    <meta id="og-image" property="og:image" content="https://www.darelchifaa.dz/images/hero.jpg">
+    <meta id="og-url" property="og:url" content="https://www.darelchifaa.dz/">
+    <meta property="og:type" content="website">
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta id="twitter-title" name="twitter:title" content="Centre Médical & Dentaire Dar El Chifaa">
+    <meta id="twitter-description" name="twitter:description" content="Prenez rendez-vous en ligne instantanément.">
+    <meta id="twitter-image" name="twitter:image" content="https://www.darelchifaa.dz/images/hero.jpg">
+
+    <!-- Fonts & Styles -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Poppins:wght@600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css?v=1.2">
+
+    <!-- Standardized Favicons -->
+    <link rel="icon" type="image/svg+xml" href="images/logo.svg">
+    <link rel="apple-touch-icon" href="images/logo.svg">
+
+    <script src="config.js?v=1.2"></script>
+    <script>
+      if (window.clinicConfig && clinicConfig.colors) {
+        var root = document.documentElement.style;
+        root.setProperty('--primary-color', clinicConfig.colors.primary);
+        root.setProperty('--secondary-color', clinicConfig.colors.secondary);
+        root.setProperty('--bg-color', clinicConfig.colors.background);
+        root.setProperty('--text-color', clinicConfig.colors.text);
+      }
+    </script>
+    
+    <!-- JSON-LD Schema -->
+    <script type="application/ld+json" id="schema-json"></script>
+</head>
+<body data-active-dept="medical">
+
+    <!-- Navbar Header -->
+    <header class="navbar">
+        <div class="nav-container">
+            <a href="#" class="logo-container">
+                <img src="images/logo.svg" alt="Dar El Chifaa Logo" class="logo-img" id="logo-img">
+                <div class="logo-text-group">
+                    <span class="brand-title dynamic-clinic-name">Dar El Chifaa</span>
+                    <span class="brand-subtitle">CENTRE MÉDICAL & DENTAIRE</span>
+                </div>
+            </a>
+
+            <button class="menu-toggle" aria-label="Ouvrir le menu" aria-expanded="false">
+                <span></span><span></span><span></span>
+            </button>
+
+            <nav class="nav-links">
+                <a href="#hero">Accueil</a>
+
+                <a href="#services">Services</a>
+                <a href="#before-after" class="dental-only-link">Avant / Après</a>
+                <a href="#gallery">Centre</a>
+                <a href="#reviews">Avis Patients</a>
+                <a href="#contact">Contact</a>
+            </nav>
+
+            <div class="master-dept-switcher">
+                <button class="dept-switch-btn active" data-dept="medical">🩺 Médicale</button>
+                <button class="dept-switch-btn" data-dept="dental">🦷 Dentaire</button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Top Selector Bar -->
+    <div class="hero-dept-selector">
+        <button class="dept-switch-btn active" data-dept="medical">
+            <span class="btn-icon">🩺</span>
+            <span class="btn-text">Pôle Médical <small>Médecine Générale</small></span>
+        </button>
+        <button class="dept-switch-btn" data-dept="dental">
+            <span class="btn-icon">🦷</span>
+            <span class="btn-text">Pôle Dentaire <small>Chirurgie & Esthétique</small></span>
+        </button>
+    </div>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Hero Section -->
+        <section id="hero" class="hero">
+            <div class="hero-container">
+                <div class="hero-text fade-up">
+                    <h1>Votre santé globale et votre sourire entre de bonnes mains.</h1>
+                    <p>Bienvenue chez <span class="dynamic-clinic-name">Dar El Chifaa</span>. Une prise en charge complète en <strong>Médecine Générale Assermentée</strong> et <strong>Chirurgie Dentaire</strong> à Sidi Abdellah.</p>
+                    
+                    <div class="hero-actions">
+                        <button id="hero-main-btn" class="btn btn-primary open-booking hero-dynamic-btn" data-booking-url="https://wa.me/213770747414?text=Bonjour,%20je%20souhaite%20réserver%20une%20consultation%20médicale">
+                            🩺 Prendre RDV Consultation Médicale
+                        </button>
+                    </div>
+                </div>
+                
+                <div class="hero-image fade-up">
+                    <img src="images/centre-cabinet-medical-dentaire-dar-el-chifaa-alger-sidiabdellah-Réception.jpeg" alt="Centre Médical et Dentaire Dar El Chifaa" loading="eager" width="600" height="500">
+                </div>
+            </div>
+        </section>
+
+        <!-- Why Choose Us Section -->
+<section id="about" class="why-choose-us section-padding">
+    <div class="section-header">
+        <h2>Pourquoi Choisir Dar El Chifaa ?</h2>
+        <p>Un plateau technique moderne et des soins de santé centrés sur votre confort et votre sécurité à Sidi Abdellah.</p>
+    </div>
+    
+    <div class="features-grid">
+        <div class="feature-card fade-up">
+            <div class="feature-icon">🛡️</div>
+            <h3>Pôle Assermenté & Officiel</h3>
+            <p>Délivrance de certificats médicaux officiels, bilans de santé globaux et expertises réglementaires.</p>
+        </div>
+
+        <div class="feature-card fade-up">
+            <div class="feature-icon">🔬</div>
+            <h3>Technologies Modernes</h3>
+            <p>Équipements récents pour la chirurgie dentaire, l'implantologie et les soins esthétiques du sourire.</p>
+        </div>
+
+        <div class="feature-card fade-up">
+            <div class="feature-icon">📍</div>
+            <h3>Accès Facile & Parking</h3>
+            <p>Implanté au cœur de Sidi Abdellah (Cité 5000 Logements Aslan) avec un accès simple et rapide.</p>
+        </div>
+
+        <div class="feature-card fade-up">
+            <div class="feature-icon">🤝</div>
+            <h3>Prise en Charge Rapide</h3>
+            <p>Gestion optimisée des rendez-vous via WhatsApp pour réduire votre temps d'attente au cabinet.</p>
+        </div>
+    </div>
+</section>
+
+
+        <!-- Services Section -->
+        <section id="services" class="services section-padding gray-bg">
+            <div class="section-header">
+                <h2>Nos Prestations</h2>
+                <p>Découvrez l'ensemble de nos soins spécialisés.</p>
+            </div>
+
+            <div class="services-grid" id="services-target"></div>
+        </section>
+
+        <!-- Before / After Section -->
+        <section id="before-after" class="before-after section-padding">
+            <div class="section-header">
+                <h2>Résultats Avant / Après</h2>
+                <p>Transformations réalisées par nos chirurgiens-dentistes.</p>
+            </div>
+            <div class="before-after-grid" id="before-after-target"></div>
+        </section>
+
+<!-- Gallery Section -->
+<section id="gallery" class="gallery section-padding">
+    <div class="section-header">
+        <h2>Notre Centre</h2>
+        <p>Un environnement moderne et stérile conçu pour votre sécurité et votre confort.</p>
+    </div>
+    
+    <div class="gallery-grid">
+        <div class="gallery-item" data-dept="dental">
+            <div class="gallery-img-wrapper">
+                <img src="images/dar-el-chifaa-sidiabdellah-cabinet-dentaire-chaise-dentaire.jpeg" alt="Cabinet Dentaire Dar El Chifaa" loading="lazy">
+            </div>
+            <div class="gallery-caption">Cabinet de Chirurgie Dentaire</div>
+        </div>
+
+        <div class="gallery-item" data-dept="medical">
+            <div class="gallery-img-wrapper">
+                <img src="images/centre-cabinet-medical-dentaire-dar-el-chifaa-alger-sidiabdellah-façade.jpeg" alt="Façade du Centre Dar El Chifaa" loading="lazy">
+            </div>
+            <div class="gallery-caption">Façade du Centre</div>
+        </div>
+
+        <div class="gallery-item" data-dept="medical">
+            <div class="gallery-img-wrapper">
+                <img src="images/centre-cabinet-medical-dentaire-dar-el-chifaa-alger-sidiabdellah-Espace-d'Accueil-et-Réception.jpeg" alt="Réception du Centre" loading="lazy">
+            </div>
+            <div class="gallery-caption">Espace d'Accueil & Réception</div>
+        </div>
+    </div>
+</section>
+
+        <!-- Reviews Section -->
+        <section id="reviews" class="reviews section-padding gray-bg">
+            <div class="section-header">
+                <h2>Avis Vérifiés de nos Patients</h2>
+                <p>Témoignages réels extraits de notre fiche Google Business.</p>
+            </div>
+            <div class="reviews-container" id="reviews-target"></div>
+        </section>
+
+        
+       <!-- Contact Section -->
+<section id="contact" class="contact section-padding">
+    <div class="contact-container">
+        <!-- Contact Information Block -->
+        <div class="contact-info fade-up">
+            <h2>Contact & Horaires</h2>
+            <p class="contact-lead">Retrouvez notre centre à Sidi Abdellah pour vos consultations et soins.</p>
+            
+            <ul class="contact-details-list">
+                <li class="contact-item">
+                    <span class="contact-icon">📍</span>
+                    <div class="contact-text">
+                        <strong>Adresse</strong>
+                        <span class="address-text">Sidi Abdellah, Cité 5000 Logements Aslan, Entrée Atlas 13300, Alger</span>
+                    </div>
+                </li>
+                <li class="contact-item">
+                    <span class="contact-icon">📞</span>
+                    <div class="contact-text">
+                        <strong>Téléphone</strong>
+                        <a href="tel:0770747414" class="dynamic-phone-link">0770 74 74 14</a>
+                    </div>
+                </li>
+                <li class="contact-item">
+                    <span class="contact-icon">✉️</span>
+                    <div class="contact-text">
+                        <strong>E-mail</strong>
+                        <a href="mailto:contact@darelchifaa.dz" class="dynamic-email-link">contact@darelchifaa.dz</a>
+                    </div>
+                </li>
+            </ul>
+            
+            <div class="hours-box">
+                <h3>Horaires d'Ouverture</h3>
+                <ul id="hours-target" class="hours-list">
+                    <!-- Dynamic Injection via script.js -->
+                </ul>
+            </div>
+        </div>
+
+        <!-- Google Maps Embed Container -->
+        <div class="contact-map fade-up">
+            <iframe id="maps-target" src="" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" title="Localisation du centre médical et dentaire Dar El Chifaa"></iframe>
+        </div>
+    </div>
+</section>
+
+<!-- Call to Action Section -->
+<section class="cta-section section-padding">
+    <div class="cta-container">
+        <h2>Prêt à prendre soin de votre santé ?</h2>
+        <p>Réservez votre consultation sur WhatsApp en un instant.</p>
+        <div class="cta-actions">
+            <button class="btn btn-primary open-booking">Choisir un Rendez-vous</button>
+            <a href="https://wa.me/213770747414" class="btn btn-secondary whatsapp-btn" target="_blank" rel="noopener">WhatsApp Direct</a>
+        </div>
+    </div>
+</section>
+
+
+<!-- Footer -->
+<footer>
+    <div class="footer-container">
+        <p>&copy; 2026 <span class="dynamic-clinic-name">Dar El Chifaa</span>. Tous droits réservés.</p>
+        
+        <!-- Agency Credit -->
+        <p class="agency-credit">
+            Conçu & développé par <a href="https://sterlingmedia.dz" target="_blank" rel="noopener"><strong>Sterling Media</strong></a>
+        </p>
+
+        <div class="socials">
+            <a href="https://facebook.com/darelchifaa" class="fb-link" target="_blank" rel="noopener">Facebook</a>
+            <a href="https://instagram.com/darelchifaa" class="ig-link" target="_blank" rel="noopener">Instagram</a>
+        </div>
+    </div>
+</footer>
+
+    <!-- Floating WhatsApp Button -->
+    <a href="https://wa.me/213770747414?text=Bonjour,%20je%20souhaite%20obtenir%20des%20informations" class="floating-whatsapp" target="_blank" rel="noopener noreferrer" aria-label="Discuter sur WhatsApp">
+      <svg class="whatsapp-ico" viewBox="0 0 24 24" fill="#FFFFFF">
+        <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981z"/>
+      </svg>
+    </a>
+
+    <!-- Sticky Mobile Action Bar -->
+    <div class="mobile-sticky-bar">
+        <a href="tel:0770747414" class="sticky-btn sticky-call">📞 Appeler</a>
+        <a href="https://wa.me/213770747414?text=Bonjour,%20je%20souhaite%20prendre%20rendez-vous" target="_blank" rel="noopener" class="sticky-btn sticky-wa">💬 WhatsApp</a>
+    </div>
+
+    <!-- Booking Modal -->
+    <div class="booking-modal" id="bookingModal" aria-hidden="true">
+        <div class="modal-content">
+            <button class="close-modal" aria-label="Fermer la fenêtre">&times;</button>
+            <div id="iframe-container" style="width:100%; height:100%;"></div>
+        </div>
+    </div>
+
+    <!-- Cookie Consent Banner -->
+    <div class="consent-banner" id="consentBanner">
+        <p>Nous utilisons des cookies pour améliorer votre expérience. <a href="#" class="consent-learn-more">En savoir plus</a></p>
+        <div class="consent-actions">
+            <button class="btn btn-secondary" id="consentDecline">Refuser</button>
+            <button class="btn btn-primary" id="consentAccept">Accepter</button>
+        </div>
+    </div>
+
+    <script src="script.js?v=1.2"></script>
+</body>
+</html>
